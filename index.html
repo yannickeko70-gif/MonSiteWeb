@@ -32,53 +32,113 @@ scale=1.0">
       </div>  
     </section> 
     <section id="services">
-  <h2>Nos services</h2>
-  <p class="intro">
-    Nous vous accompagnons dans la création, l'hébergement et la maintenance
-    de vos projets web, du prototype à la mise en production.
-  </p>
+      <h2>Nos services</h2>
+      <p class="intro">
+        Nous vous accompagnons dans la création, l'hébergement et la maintenance
+        de vos projets web, du prototype à la mise en production.
+      </p>
 
-  <div class="services-grid">
+      <div class="services-grid">
 
-    <article class="service-card">
-      <h3>Création de sites web</h3>
-      <p>Conception de sites vitrines, portfolios et applications web modernes,
-         responsives et adaptés à votre identité visuelle.</p>
-      <ul>
-        <li>Design responsive (mobile / tablette / desktop)</li>
-        <li>Intégration HTML5 / CSS3 / JavaScript</li>
-        <li>Optimisation des performances</li>
-      </ul>
-    </article>
+        <article class="service-card">
+          <h3>Création de sites web</h3>
+          <p>Conception de sites vitrines, portfolios et applications web modernes,
+            responsives et adaptés à votre identité visuelle.</p>
+          <ul>
+            <li>Design responsive (mobile / tablette / desktop)</li>
+            <li>Intégration HTML5 / CSS3 / JavaScript</li>
+            <li>Optimisation des performances</li>
+          </ul>
+        </article>
 
-    <article class="service-card">
-      <h3>Sauvegarde &amp; Versioning</h3>
-      <p>Mise en place de stratégies de sauvegarde et de gestion de versions
-         avec Git et GitHub pour sécuriser vos projets.</p>
-      <ul>
-        <li>Initiation à Git &amp; GitHub</li>
-        <li>Branches, commits, pull requests</li>
-        <li>Plan de sauvegarde automatisé</li>
-      </ul>
-    </article>
+        <article class="service-card">
+          <h3>Sauvegarde &amp; Versioning</h3>
+          <p>Mise en place de stratégies de sauvegarde et de gestion de versions
+            avec Git et GitHub pour sécuriser vos projets.</p>
+          <ul>
+            <li>Initiation à Git &amp; GitHub</li>
+            <li>Branches, commits, pull requests</li>
+            <li>Plan de sauvegarde automatisé</li>
+          </ul>
+        </article>
 
-    <article class="service-card">
-      <h3>Déploiement &amp; Hébergement</h3>
-      <p>Mise en ligne de votre site sur des plateformes fiables, avec
-         configuration DNS, HTTPS et suivi des performances.</p>
-      <ul>
-        <li>Déploiement GitHub Pages / Vercel</li>
-        <li>Nom de domaine &amp; certificat SSL</li>
-        <li>Monitoring et maintenance</li>
-      </ul>
-    </article>
+        <article class="service-card">
+          <h3>Déploiement &amp; Hébergement</h3>
+          <p>Mise en ligne de votre site sur des plateformes fiables, avec
+            configuration DNS, HTTPS et suivi des performances.</p>
+          <ul>
+            <li>Déploiement GitHub Pages / Vercel</li>
+            <li>Nom de domaine &amp; certificat SSL</li>
+            <li>Monitoring et maintenance</li>
+          </ul>
+        </article>
 
-  </div>
-</section>
-    <section id="contact"> 
-      <h2>Contact</h2> 
-      <p>Écrivez-nous : contact@example.com</p> 
-    </section> 
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-intro">
+        Une question sur nos formations, un projet à discuter ou simplement envie
+        de passer dire bonjour ? Écrivez-nous, on vous répond sous 48h.
+      </p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Nos coordonnées</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:contact@example.com">yannickeko70@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Téléphone</span>
+              <a href="tel:+33123456789">+(237) 655 50 43 97</a>
+            </li>
+            <li>
+              <span class="contact-label">Adresse</span>
+              IUC Logbessou, Douala, Cameroun
+            </li>
+            <li>
+              <span class="contact-label">Horaires</span>
+              Lun. – Sam. : 8h – 17h
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <h3>Envoyez-nous un message</h3>
+
+          <div class="form-row">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="sujet">Sujet</label>
+            <select id="sujet" name="sujet">
+              <option value="formation">Formation</option>
+              <option value="projet">Projet web</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"
+              placeholder="Décrivez votre besoin en quelques lignes..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-send">Envoyer le message</button>
+        </form>
+
+      </div>
+    </section>
   </main> 
   <footer><p>© 2026 MonSiteWeb</p></footer> 
 </body> 
