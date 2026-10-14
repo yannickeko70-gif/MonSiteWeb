@@ -113,3 +113,139 @@ padding: 12px;
 text-align: center; 
 background: #e1eaf4; 
 }
+/* ===== Section Contact ===== */
+#contact {
+  background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%);
+}
+
+.contact-intro {
+  max-width: 640px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: #4a5568;
+  font-size: 1.05rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-info h3,
+.contact-form h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #17365d;
+  font-size: 1.15rem;
+  border-bottom: 2px solid #e2ecf7;
+  padding-bottom: 8px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  color: #2d3748;
+}
+
+.contact-label {
+  display: block;
+  font-weight: bold;
+  color: #17365d;
+  margin-bottom: 2px;
+}
+
+.contact-list a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Formulaire */
+.contact-form {
+  background: white;
+  border: 1px solid #e2ecf7;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 4px 12px rgba(23, 54, 93, 0.06);
+}
+
+.form-row {
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #17365d;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #222;
+  background: #f9fbff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #2b6cb0;
+  box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+  background: white;
+}
+
+.form-row textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.btn-send {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 18px;
+  background: #17365d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.btn-send:hover {
+  background: #2b6cb0;
+  transform: translateY(-1px);
+}
+
+.btn-send:active {
+  transform: translateY(0);
+}
+
+/* Responsive contact */
+@media (max-width: 700px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
